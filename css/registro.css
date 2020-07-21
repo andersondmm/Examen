@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Roboto:wght@100&family=Sofia&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --colorTextos: #49454567
+}
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    height: 100%;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+.grid-container >*{
+    box-shadow: -1px 1px  7px 0px white;
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+.primero{
+    grid-area: primero;
+    background-color: #45ac9c;
+}
+.segundo{
+    grid-area: segundo;
+    background-color: white;
+}
+.tercero{
+    grid-area: tercero;
+    background-color: white;
+}
+.cuarto{
+    grid-area: cuarto;
+    background-color: white;
+
+}
+.quinto{
+    grid-area: quinto;
+    background-color: white;
+}
+/*modo celular*/
+.grid-container{
+    display: grid;
+    gap: 5px; /* para separar los grid*/
+    grid-template: 
+    "primero"  50px
+    "segundo"  200px
+    "tercero"  300px
+    "cuarto"   700px
+    "quinto"   300px /
+     480px auto;
+}
+/*modo tablet   mas de 600px*/
+@media (min-width:600px){
+    .grid-container{
+        /*alto de las filas*/
+        grid-template:
+        "primero"   50px
+        "segundo"   200px
+        "tercero"   250px
+        "cuarto"    600px
+        "quinto"    400px/
+        /* ancho de las filas*/
+        auto
+        ;
+    }
+}     
+@media (min-width:400px){
+    .grid-container{
+        /*alto de las filas*/
+        grid-template:
+        "primero"   50px
+        "segundo"   200px
+        "tercero"   250px
+        "cuarto"    500px
+        "quinto"    400px/
+        /* ancho de las filas*/
+        auto
+        ;
+    }
+}     
+/*modo escritorio*/     
+@media (min-width:900px){
+    .grid-container{
+        /*alto de las filas*/
+        grid-template:
+        "primero"   50px
+        "segundo"   150px
+        "tercero"   200px
+        "cuarto"    600px
+        "quinto"   390px/
+        /* ancho de las filas*/
+        auto
+        ;
+    }
+}
+/*ESTILOS DEL PRIMER APARTADO*/
+.nombredelsitio {
+    display: flex;
+    margin-top: auto;
+    color: black;
+}
+
+.enlaces{
+    text-align: right;
+    margin-top: -25px;
+    text-decoration: none;
+    
+}
+.enlaces a{
+    text-decoration: none;
+    color: white;
+}
+/*ESTILOS DEL SEGUNDO APARTADO*/
+.logoNombre{
+    position: absolute;
+    top: 90px;  
+}
+
+.boton{
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: rgb(245, 240, 240);
+    font-size: 30px;
+
+}
+.asistencia{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10px;
+} 
+/* ESTILOS DEL TERCER APARTADO*/
+.navegacion{
+    width: 100%;
+    margin-top: 7%;
+   
+}
+.navegacion nav{
+    width: 90%;
+    max-width: 700px;
+    background: #45ac9c;
+    margin: 40px auto;
+    height: 80px;
+   
+}
+.navegacion nav ul{
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+.navegacion nav > ul > li{
+    display: inline-block;
+}
+.navegacion nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+.navegacion nav > ul > li > a i{
+    font-size: 20px;
+    position: absolute;
+    bottom: -10px;
+    display: none;
+}
+.navegacion nav > ul > li:hover i{
+    display: block;
+
+}
+/*ESTILOS DEL SUBMENU*/
+li a{
+    text-decoration: none;
+    color: rgb(143, 185, 206);
+    
+    
+}
+.navegacion nav ul li .submenu{
+     background: #fff;
+     padding: 10px;
+     position: absolute;
+     display: none;
+     -webkit-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.24);
+}
+.navegacion nav ul li:hover .submenu{
+    display: flex;
+}
+.navegacion nav ul li .submenu .submenu-items{
+    margin:  0 20px;
+}
+.navegacion nav ul li .submenu p{
+    font-weight: 600;
+    width: 210px;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #565656;
+    margin-bottom: 10px;
+}
+.navegacion nav ul li .submenu .submenu-items{
+    color: #474747;
+    text-decoration: none;
+    margin: 5px 0;
+    
+    
+}
+/*ESTILOS DEL CUARTO APARTADO*/
+.cuarto-item{
+    float: left;
+    margin: 4em;
+    padding: 1em;
+    margin-top: 1vw;
+    position: relative;
+}
+.contenedor-cuarto{
+    max-width: 500px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+    font-weight: 700;
+}
+form{
+    background: white;
+    padding: 40px 0;
+    box-shadow: 0 0 6px rgba(204, 198, 198, 0.8);
+    border-radius: 10px;
+}
+form{
+    width: 100%;
+    margin: auto;
+}
+form .grupo{
+    position: relative;
+    margin: 45px;
+    
+}
+input{
+    background: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+input:focus{
+    outline: none;
+    color: #5e5d5d;
+}
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease-in-out all;
+    pointer-events: none;
+}
+input:focus~label,
+input:valid~label{
+    top: -14px;
+    font-size: 12px;
+    color: #2196f3;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #B06AB3, #4568DC);
+    transition: 0.3s ease width;
+    left: 0;
+}
+input:focus~.barra::before{
+    width: 100%;
+} 
+.warnings{
+    width: 200px;
+    text-align: center;
+    margin: auto;
+    color: #B06AB3;
+    padding-top: 20px;
+}
+button{
+    font-family: 'roboto';
+    background: #45ac9c;
+   
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+}     
+@media screen and (max-width: 500px){
+    form{
+        width: 80%;
+    }
+}                              
+/* ESTILOS DEL QUINTO APARTADO */
+.quinto{
+    margin-top: 200px;
+    height: auto;
+}
+
+.contenedor-quinto{
+    background-color: #f0f3f3;
+    padding: 3.5em;
+    overflow: hidden;
+    height: auto;
+    max-width: 100%;
+                                                          
+}
+.quinto-item a{                                                              
+    text-decoration: none;
+    color: black;
+}
+.quinto-item{
+    
+    margin: 4em;
+    padding: 1em;
+    color: black;
+    float: left;
+    margin-top: -6%;
+    position: relative;
+}
+#cont-quinto-item1{
+    background-color: #f0f3f3;
+    text-align: left;
+    line-height: 30px;
+    
+    
+}
+.linkphone{
+    text-decoration: none;
+}
+#cont-quinto-item2{
+    background-color: #f0f3f3;
+    text-align: left;
+    line-height: 30px;
+}
+#cont-quinto-item3{
+    background-color: #f0f3f3;
+    text-align: left;
+    line-height: 30px;
+}
+
+.quinto-item h4{
+    margin: 4px;
+    border-bottom: 2px solid #45ac9c;
+    font-family: gugi;
+}
+
