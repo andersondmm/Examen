@@ -72,7 +72,7 @@ body{
         "primero"   50px
         "segundo"   200px
         "tercero"   250px
-        "cuarto"    200px
+        "cuarto"    300px
         "quinto"    400px/
         /* ancho de las filas*/
         auto
@@ -87,7 +87,7 @@ body{
         "primero"   50px
         "segundo"   150px
         "tercero"   200px
-        "cuarto"    100px
+        "cuarto"    200px
         "quinto"   390px/
         /* ancho de las filas*/
         auto
@@ -223,11 +223,16 @@ li a{
     width: 30px;
 
 }
-                                      
+.matrizdiagonal{
+    float: right;
+    margin-top: -10px;
+}
 /* ESTILOS DEL QUINTO APARTADO */
 .quinto{
     margin-top: 200px;
     height: auto;
+    height: auto;
+    max-width: 100%;
 }
 
 .contenedor-quinto{
@@ -277,4 +282,6 @@ li a{
     border-bottom: 2px solid #45ac9c;
     font-family: gugi;
 }
+
+
 
